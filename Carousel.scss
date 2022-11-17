@@ -1,0 +1,112 @@
+.carousel {
+
+    &__inner {
+        position: relative;
+    }
+
+    &__window {
+        max-width: 1190px;
+        height: 500px;
+        padding: 10px 10px 0px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__cards {
+        position: absolute;
+        height: 100%;
+        display: flex;
+        transition: translate 0.7s;
+
+    }
+
+    &__card {
+        max-width: 270px;
+        min-width: 270px;
+        height: 430px;
+        border-radius: 5px;
+        padding: 36px 5px 24px;
+        margin-right: 30px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__image {
+        display: block;
+        max-width: 230px;
+        max-height: 230px;
+        margin: auto;
+    }
+
+    &__card-info {
+        margin-top: 10px;
+        padding: 0px 25px;
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-top: 5px;
+        margin: auto;
+        font-weight: 400;
+    }
+    
+    &__price {
+        font-weight: 400;
+    }
+
+    //pagination
+
+    &__pagination {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__pagination-inner {
+        width: 320px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__arrow {
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: rgba(128, 128, 128, 0.2);
+        }
+    }
+
+    &__pagination-dots {
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__pagination-dot {
+        display: block;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        border: 2px solid rgb(118, 118, 118);
+
+        &_active {
+            background-color: rgb(174, 174, 174);
+        }
+    }
+
+}
